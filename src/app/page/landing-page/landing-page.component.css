@@ -1,0 +1,290 @@
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header Styles */
+  .main-header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+
+  
+
+  
+  .logo-letter {
+    color: white;
+    margin: 0 2px;
+    font-size: 1rem;
+  }
+  
+  .primary-nav ul {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .primary-nav li {
+    margin-right: 20px;
+  }
+  
+  .primary-nav a {
+    padding: 5px 0;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .primary-nav a.active:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .user-dropdown {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* cursor: pointer; */
+  }
+  
+
+  /* .avatar {
+    width: 32px;
+    height: 32px;
+  } */
+  
+  /* Hero Section */
+  .hero-section {
+    height: 80vh;
+    background-image: url('../../../../public/assets/images/banner.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .hero-overlay {
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 90%;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #eee;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background: #f5f5f5;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  
+  .footer-nav ul {
+    display: flex;
+    right: 90px;
+  }
+  
+  .footer-nav li{
+    margin-right: 20px;
+  }
+
+
+  
+  .newsletter-signup p {
+    margin-bottom: 10px;
+  }
+  
+  .signup-form {
+    display: flex;
+    gap: 10px;
+  }
+
+  text {
+    size: 14px;
+  }
+
+  .email {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+  }
+  
+  .btn-subscribe {
+    background: #161616;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-subscribe:hover {
+    background: #555;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+  
+  .copyright {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a {
+    margin-left: 15px;
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .primary-nav {
+      display: none;
+    }
+    
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .footer-nav ul {
+      flex-direction: column;
+    }
+    
+    .footer-nav li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-links {
+      margin-top: 10px;
+    }
+    
+    .footer-links a {
+      margin: 0 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-name {
+      display: none;
+    }
+    
+    .hero-overlay {
+      padding: 20px;
+    }
+    
+    .signup-form {
+      flex-direction: column;
+    }
+    
+    .signup-form input {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .btn-subscribe {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }

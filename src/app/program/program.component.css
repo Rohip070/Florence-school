@@ -1,0 +1,41 @@
+.programs-container {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 1240px;
+    height: 1025px;
+}
+
+.text {
+    text-align: center;
+    size: 30px;
+    color: black;
+    top: 0px;
+    margin: 0px;
+}
+
+.program-image {
+    width: 100%;
+    border-radius: 8px;
+    
+}
+
+.first-section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    
+}
+
+.second-section {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      

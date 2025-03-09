@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #555;
+  --link-color: #f0a500;
+  --button-color: #1a1a1a;
+  --input-border-color: #e0e0e0;
+}
+
+.verification-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.verification-box {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 641px;
+  /* margin-bottom: 10px; */
+}
+
+.image-container {
+  flex: 1;
+  background-image: url('../../../../public/assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    display: block;
+  }
+}
+
+.logo-container {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  
+  /* margin-bottom: 30px; */
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.instructions {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.otp-input-container {
+  margin-bottom: 1rem;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.resend-link {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.resend-link a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.verify-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.verify-button:hover {
+  background-color: #333;
+}
+
+.verify-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.back-link {
+  text-align: center;
+}
+
+.back-to-login {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-right: 0.5rem;
+}
+
+.main-box {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: #F7F7F74D;
+  border: 1px solid #F4F4F4;
+  width: 72px;
+  height: 80px;
+  padding: 16px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  outline: none;
+}

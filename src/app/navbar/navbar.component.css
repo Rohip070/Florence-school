@@ -1,0 +1,198 @@
+/* 
+li {
+    float: left;
+    display: inline;
+    margin: 16px;
+    display: flex;
+    
+  }
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.otherdiv {
+    width: 1240px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 8px;
+}
+
+
+
+.button {
+  background-color: #161616;
+  width: 93px;
+  height: 48px;
+  border-radius: 8px;
+  color: white;
+  
+} */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.logo-circle {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* .search {
+  width: 24px;
+  height: 24px;
+  padding-left: 40px;
+} */
+
+.nav-links a.active {
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../public/assets/images/banner.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-title::before,
+.hero-title::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+}
+
+.hero-title::before {
+  left: -60px;
+}
+
+.hero-title::after {
+  right: -60px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-title::before,
+  .hero-title::after {
+    display: none;
+  }
+}

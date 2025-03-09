@@ -1,0 +1,157 @@
+.signup-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    background-color: var(--background-color);
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 5px 12px;
+    border-radius: 18px;
+  }
+  
+
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .sign-in-link a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 8px;
+    font-weight: 500;
+  }
+  
+  .signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .signup-form h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+  }
+  
+  .signup-form p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .form-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .google-btn, .email-btn {
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+  
+  .google-btn {
+    background-color: #F7F7F74D;
+    border: 1px solid #F4F4F4;
+  }
+  
+  .google-btn img {
+    margin-right: 12px;
+    height: 20px;
+  }
+  
+  .email-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    text-decoration: none;
+
+  }
+  
+  .divider {
+    position: relative;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: var(--border-color);
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .divider span {
+    background-color: white;
+    padding: 0 10px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .terms {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .terms a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  .right-panel {
+    flex: 1;
+    /* background-image: url('assets/education-background.jpg'); */
+    background-image: url(../../../../public/assets/images/background.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media (max-width: 768px){
+    .right-panel {
+        display: none;
+      }
+  }
+
+    
+    .left-panel {
+      width: 100%;
+    }

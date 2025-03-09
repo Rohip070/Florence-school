@@ -1,0 +1,64 @@
+.main-div {
+
+    width: 1240px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+} 
+
+section {
+    background: #2a2a2a;
+    padding: 60px 0px;
+}
+
+.button{
+    border: 1px solid #EAECF0;
+    border-radius: 50px;
+    padding: 8px 24px;
+    background: #2a2a2a;
+    color: white;
+    
+    /* border-color: #eaecf0; */
+}
+
+.CTA {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.enroll-now {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px 24px;
+    background: white;
+}
+
+.contact-us {
+    border: 1px solid #EAECF0;
+    border-radius: 50px;
+    padding: 8px 24px;
+    background: #2a2a2a;
+    color: white;
+}
+
+.div-button {
+    color: white;
+}
+
+.headline {
+    size: 48px;
+    font-weight: 900;
+    /* padding: 10px; */
+
+}
+
+.other-text {
+    text-align: center;
+    line-height: 30px;
+
+    color: white;
+}

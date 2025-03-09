@@ -1,0 +1,132 @@
+<div class="registration-container">
+  <header>
+    <div class="logo">R</div>
+    <div class="header-right">
+      <span class="user-info">Currently Active: <span class="username">Sameera Pereira</span></span>
+    </div>
+  </header>
+
+  <div class="content-container">
+    <h1>Add New Student</h1>
+    
+    <div class="action-buttons">
+      <button class="save-button">Save changes</button>
+      <button class="back-button">Back</button>
+    </div>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" formControlName="firstName">
+        </div>
+        
+        <div class="form-group">
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" formControlName="lastName">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" formControlName="gender">
+            <option value="" disabled selected></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="dateOfBirth">Date of Birth</label>
+          <div class="date-field">
+            <input type="date" id="dateOfBirth" formControlName="dateOfBirth">
+            <small>Please submit a copy of the birth certificate for verification purposes.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group phone-group">
+        <label for="studentPhoneNumber">Student Phone number</label>
+        <div class="phone-input">
+          <input type="text" class="country-code" value="+44" readonly>
+          <input type="text" id="studentPhoneNumber" formControlName="studentPhoneNumber">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="height">Height (height)</label>
+          <select id="height" formControlName="height">
+            <option value="" disabled selected></option>
+            <!-- Options would be populated here -->
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="weight">Weight</label>
+          <select id="weight" formControlName="weight">
+            <option value="" disabled selected></option>
+            <!-- Options would be populated here -->
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="guardianEmail">Guardian Email Address</label>
+        <input type="email" id="guardianEmail" formControlName="guardianEmail" placeholder="yourname@mail.com">
+      </div>
+
+      <div class="form-group phone-group">
+        <label for="guardianPhoneNumber">Guardian Phone number</label>
+        <div class="phone-input">
+          <input type="text" class="country-code" value="+44" readonly>
+          <input type="text" id="guardianPhoneNumber" formControlName="guardianPhoneNumber">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="residentialAddress">Residential address</label>
+        <input type="text" id="residentialAddress" formControlName="residentialAddress" placeholder="e.g. Robinson street">
+        <small>Please include your full address, with street name, street number and city. E.g. 123 Ocean View, San Francisco, USA.</small>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" formControlName="city">
+        </div>
+        
+        <div class="form-group">
+          <label for="postalCode">Postal code</label>
+          <input type="text" id="postalCode" formControlName="postalCode">
+        </div>
+      </div>
+
+      <div class="form-group photo-upload">
+        <label>Student Photo</label>
+        <div class="upload-container">
+          <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <div class="upload-text">Click to upload or drag and drop</div>
+          <div class="file-types">PNG, JPG or GIF (max. 800x400px)</div>
+          <input type="file" accept="image/*" class="file-input">
+        </div>
+      </div>
+
+      <div class="upload-progress">
+        <div class="progress-info">
+          <span class="file-name">loading.png</span>
+          <span class="progress-percentage"></span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-value" [style.width.%]=""></div>
+        </div>
+      </div>
+      
+      <button type="submit" class="submit-button">Save changes</button>
+    </form>
+  </div>
+</div>
